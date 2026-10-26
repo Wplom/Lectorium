@@ -1,0 +1,53 @@
+.search-filter {
+    position: relative;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.search-filter input {
+    width: 100%;
+    padding: 16px 20px;
+    padding-right: 50px;
+    background-color: white;
+    border: 1px solid #e8e1ff;
+    border-radius: 16px;
+    font-size: 16px;
+    color: #2d2440;
+    box-shadow: 0 4px 15px rgba(76, 29, 149, 0.05);
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-filter input:focus {
+    border-color: #7c3aed;
+    box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.clear-btn {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #8b8199;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 4px;
+}
+
+.clear-btn:hover {
+    color: #7c3aed;
+}
+
+/* Темная тема */
+.dark-theme .search-filter input {
+    background-color: #241d31;
+    border-color: #43345c;
+    color: #f5f1ff;
+}
+
+.dark-theme .search-filter input:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 4px rgba(167, 139, 250, 0.15);
+}

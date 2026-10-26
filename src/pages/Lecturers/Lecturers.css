@@ -1,0 +1,41 @@
+.lecturers-page {
+    width: min(1200px, calc(100% - 32px));
+    margin: 32px auto 0;
+}
+
+
+
+
+
+.lecturers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+}
+
+.back-btn {
+    margin-bottom: 20px;
+    padding: 10px 16px;
+    color: #6d28d9;
+    background-color: #f3e8ff;
+    border: 1px solid #ddd0ff;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* Темная тема */
+
+
+.dark-theme .back-btn {
+    color: #ddd6fe;
+    background-color: #35264d;
+    border-color: #594175;
+}
+.no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    color: #6b6476;
+    font-size: 18px;
+}

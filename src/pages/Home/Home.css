@@ -1,0 +1,233 @@
+.home {
+    width: min(1200px, calc(100% - 32px));
+    margin: 32px auto 0;
+}
+
+/* Общие заголовки (убрали .hero-label из этой группы) */
+.section-heading span
+ {
+    display: inline-block;
+    margin-bottom: 12px;
+
+    color: #7c3aed;
+
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.home-about,
+.directions {
+    margin-top: 32px;
+    padding: 45px;
+
+    background-color: white;
+
+    border: 1px solid #e8e1ff;
+    border-radius: 24px;
+
+    box-shadow: 0 12px 35px rgba(76, 29, 149, 0.08);
+}
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    color: #2d2440;
+    font-size: 34px;
+}
+
+.section-heading p {
+    max-width: 650px;
+    margin: 12px 0 0;
+
+    color: #6b6476;
+    line-height: 1.7;
+}
+
+/* Преимущества */
+
+.about-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.about-item {
+    display: flex;
+    gap: 16px;
+
+    padding: 22px;
+
+    background-color: #faf8ff;
+
+    border: 1px solid #ebe5fa;
+    border-radius: 16px;
+}
+
+.about-item strong {
+    color: #8b5cf6;
+    font-size: 28px;
+}
+
+.about-item h3 {
+    margin: 3px 0 8px;
+
+    color: #372b4d;
+    font-size: 18px;
+}
+
+.about-item p {
+    margin: 0;
+
+    color: #6b6476;
+    line-height: 1.6;
+}
+
+/* Направления */
+
+.directions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.direction-card {
+    padding: 25px;
+
+    background-color: #faf8ff;
+
+    border: 1px solid #e7def8;
+    border-radius: 18px;
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s,
+        border-color 0.2s;
+}
+
+.direction-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #c4b5fd;
+
+    box-shadow: 0 14px 28px rgba(109, 40, 217, 0.12);
+}
+
+.direction-icon {
+    display: grid;
+    place-items: center;
+
+    width: 58px;
+    height: 58px;
+    margin-bottom: 18px;
+
+    background-color: #ede9fe;
+    border-radius: 14px;
+
+    font-size: 28px;
+}
+
+.direction-card h3 {
+    margin: 0 0 10px;
+
+    color: #38274f;
+    font-size: 20px;
+}
+
+.direction-card p {
+    min-height: 52px;
+    margin: 0 0 20px;
+
+    color: #6b6476;
+    line-height: 1.6;
+}
+
+.direction-card button {
+    padding: 10px 16px;
+
+    color: #6d28d9;
+    background-color: transparent;
+
+    border: 1px solid #c4b5fd;
+    border-radius: 9px;
+
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.direction-card button:hover {
+    color: white;
+    background-color: #7c3aed;
+}
+
+/* Нижний баннер */
+
+
+/* Темная тема */
+
+.dark-theme .home-about,
+.dark-theme .directions {
+    background-color: #241d31;
+    border-color: #43345c;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.dark-theme .section-heading h2 {
+    color: #f5f1ff;
+}
+
+.dark-theme .section-heading p {
+    color: #d4cddd;
+}
+
+.dark-theme .about-item,
+.dark-theme .direction-card {
+    background-color: #302640;
+    border-color: #4d3c65;
+}
+
+.dark-theme .about-item h3,
+.dark-theme .direction-card h3 {
+    color: #f1ecf8;
+}
+
+.dark-theme .about-item p,
+.dark-theme .direction-card p {
+    color: #cec5d8;
+}
+
+.dark-theme .direction-icon {
+    background-color: #423157;
+}
+
+/* Адаптация */
+
+@media (max-width: 900px) {
+    .about-grid,
+    .directions-grid {
+        grid-template-columns: 1fr;
+    }
+
+   
+}
+
+@media (max-width: 600px) {
+    .home {
+        width: min(100% - 20px, 1200px);
+        margin-top: 20px;
+    }
+
+    .home-about,
+    .directions {
+        padding: 25px 20px;
+        border-radius: 18px;
+    }
+
+   
+}

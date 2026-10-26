@@ -1,0 +1,117 @@
+.footer {
+    width: min(1200px, calc(100% - 32px));
+    margin: 60px auto 20px;
+    padding: 45px;
+    background-color: white;
+    border: 1px solid #e8e1ff;
+    border-radius: 24px;
+    box-shadow: 0 12px 35px rgba(76, 29, 149, 0.08);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer-brand h2 {
+    margin: 0 0 12px;
+    color: #6d28d9;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.footer-brand p {
+    margin: 0;
+    color: #6b6476;
+    line-height: 1.6;
+    max-width: 300px;
+}
+
+.footer-links h3,
+.footer-contacts h3 {
+    margin: 0 0 16px;
+    color: #2d2440;
+    font-size: 18px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links button {
+    margin-bottom: 10px;
+    padding: 0;
+    color: #6b6476;
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.footer-links button:hover {
+    color: #7c3aed;
+}
+
+.footer-contacts p {
+    margin: 0 0 10px;
+    color: #6b6476;
+    font-size: 15px;
+}
+
+.footer-bottom {
+    padding-top: 20px;
+    border-top: 1px solid #e8e1ff;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #8b8199;
+    font-size: 14px;
+}
+
+/* Темная тема */
+.dark-theme .footer {
+    background-color: #241d31;
+    border-color: #43345c;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.dark-theme .footer-brand h2 {
+    color: #c4b5fd;
+}
+
+.dark-theme .footer-brand p,
+.dark-theme .footer-links button,
+.dark-theme .footer-contacts p {
+    color: #d4cddd;
+}
+
+.dark-theme .footer-links h3,
+.dark-theme .footer-contacts h3 {
+    color: #f5f1ff;
+}
+
+.dark-theme .footer-links button:hover {
+    color: #a78bfa;
+}
+
+.dark-theme .footer-bottom {
+    border-color: #43345c;
+}
+
+.dark-theme .footer-bottom p {
+    color: #a59bb3;
+}
+
+@media (max-width: 800px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}

@@ -1,0 +1,98 @@
+.partner-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Чтобы карточки были одинаковыми по высоте */
+    padding: 30px;
+    background-color: white;
+    border: 1px solid #e8e1ff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(76, 29, 149, 0.08);
+    transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.partner-card:hover {
+    transform: translateY(-5px);
+    border-color: #c4b5fd;
+    box-shadow: 0 16px 35px rgba(76, 29, 149, 0.14);
+}
+
+/* Контейнер для логотипа - делаем его чистым и фиксированным */
+.partner-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 140px; /* Фиксированная высота для всех логотипов */
+    margin-bottom: 24px;
+    /* Убрали градиент и рамку */
+    background: transparent; 
+    border: none;
+}
+
+/* Сама картинка */
+.partner-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* Сохраняет пропорции, вписывая в 140px */
+}
+
+.partner-content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+/* Название компании под логотипом (можно оставить для солидности) */
+.partner-content h2 {
+    margin: 0 0 12px;
+    color: #38274f;
+    font-size: 22px;
+    text-align: center; /* Выровняли по центру, так как логотип по центру */
+}
+
+.partner-content p {
+    margin: 0 0 24px;
+    color: #6b6476;
+    line-height: 1.7;
+    font-size: 15px;
+    text-align: center; /* Текст тоже по центру для симметрии */
+}
+
+/* Кнопка */
+.partner-content a {
+    align-self: center; /* Кнопка по центру */
+    margin-top: auto;
+    padding: 12px 24px;
+    color: white;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 7px 18px rgba(124, 58, 237, 0.22);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.partner-content a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.32);
+}
+
+/* Темная тема */
+.dark-theme .partner-card {
+    background-color: #241d31;
+    border-color: #43345c;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.dark-theme .partner-content h2 {
+    color: #f5f1ff;
+}
+
+.dark-theme .partner-content p {
+    color: #d4cddd;
+}
+
+.dark-theme .partner-card:hover {
+    border-color: #76599a;
+}

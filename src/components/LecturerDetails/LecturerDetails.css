@@ -1,0 +1,157 @@
+.details-wrapper {
+    background: white;
+    border: 1px solid #e8e1ff;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 12px 35px rgba(76, 29, 149, 0.08);
+}
+
+.details-header {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e1ff;
+}
+
+.details-photo {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 16px;
+    background-color: #f3e8ff;
+}
+
+.details-info h1 {
+    margin: 0 0 20px;
+    color: #2d2440;
+    font-size: 32px;
+}
+
+.details-info p {
+    margin: 0 0 12px;
+    color: #4a4054;
+    font-size: 16px;
+}
+
+.details-info strong {
+    color: #7c3aed;
+}
+
+.details-disciplines h2,
+.details-tariffs h2 {
+    margin: 0 0 24px;
+    color: #2d2440;
+    font-size: 26px;
+}
+
+.discipline-block {
+    margin-bottom: 30px;
+    padding: 24px;
+    background-color: #faf8ff;
+    border: 1px solid #ebe5fa;
+    border-radius: 16px;
+}
+
+.discipline-block h3 {
+    margin: 0 0 8px;
+    color: #38274f;
+    font-size: 20px;
+}
+
+.disc-desc {
+    margin: 0 0 16px;
+    color: #6b6476;
+    font-style: italic;
+}
+
+.topics-list {
+    margin: 0;
+    padding-left: 20px;
+    color: #4a4054;
+    line-height: 1.8;
+}
+
+.details-tariffs {
+    margin-top: 40px;
+}
+
+.tariffs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 16px;
+}
+
+.tariff-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px;
+    background: linear-gradient(135deg, #f3e8ff, #ede9fe);
+    border: 1px solid #ddd0ff;
+    border-radius: 16px;
+}
+
+.tariff-card span {
+    color: #635b70;
+    font-size: 15px;
+}
+
+.tariff-card strong {
+    color: #6d28d9;
+    font-size: 24px;
+}
+
+/* Темная тема */
+.dark-theme .details-wrapper {
+    background: #241d31;
+    border-color: #43345c;
+}
+
+.dark-theme .details-header {
+    border-color: #43345c;
+}
+
+.dark-theme .details-info h1,
+.dark-theme .details-disciplines h2,
+.dark-theme .details-tariffs h2,
+.dark-theme .discipline-block h3 {
+    color: #f5f1ff;
+}
+
+.dark-theme .details-info p,
+.dark-theme .disc-desc,
+.dark-theme .topics-list {
+    color: #d4cddd;
+}
+
+.dark-theme .discipline-block {
+    background-color: #302640;
+    border-color: #4d3c65;
+}
+
+.dark-theme .tariff-card {
+    background: linear-gradient(135deg, #35264d, #302640);
+    border-color: #594175;
+}
+
+.dark-theme .tariff-card span {
+    color: #cec5d8;
+}
+
+.dark-theme .tariff-card strong {
+    color: #ddd6fe;
+}
+
+@media (max-width: 768px) {
+    .details-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .details-photo {
+        width: 100%;
+        max-width: 300px;
+    }
+}

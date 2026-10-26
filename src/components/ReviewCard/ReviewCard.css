@@ -1,0 +1,76 @@
+.review-card {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: white;
+    border: 1px solid #e8e1ff;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(76, 29, 149, 0.06);
+}
+
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.review-author {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.author-avatar {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    background: linear-gradient(135deg, #7c3aed, #9333ea);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.review-author h3 {
+    margin: 0 0 4px;
+    color: #2d2440;
+    font-size: 16px;
+}
+
+.review-date {
+    color: #8b8199;
+    font-size: 13px;
+}
+
+.review-rating {
+    color: #fbbf24;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+.review-text {
+    margin: 0;
+    color: #4a4054;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Темная тема */
+.dark-theme .review-card {
+    background-color: #241d31;
+    border-color: #43345c;
+}
+
+.dark-theme .review-author h3 {
+    color: #f5f1ff;
+}
+
+.dark-theme .review-date {
+    color: #a59bb3;
+}
+
+.dark-theme .review-text {
+    color: #d4cddd;
+}

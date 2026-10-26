@@ -1,0 +1,50 @@
+.partners-page {
+    width: min(1200px, calc(100% - 32px));
+    margin: 32px auto 0;
+}
+
+/* Заголовок страницы */
+
+
+
+
+/* Сетка партнёров */
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+
+    margin-top: 28px;
+}
+
+/* Блок сотрудничества */
+
+
+
+
+
+
+/* Тёмная тема (только для элементов этой страницы) */
+
+
+
+
+
+/* Адаптация */
+
+@media (max-width: 800px) {
+    .partners-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+    .partners-page {
+        width: min(100% - 20px, 1200px);
+        margin-top: 20px;
+    }
+
+}

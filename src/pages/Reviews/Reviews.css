@@ -1,0 +1,47 @@
+.reviews-page {
+    width: min(1200px, calc(100% - 32px));
+    margin: 32px auto 0;
+}
+
+
+
+
+
+/* Сетка: слева отзывы, справа форма */
+.reviews-layout {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+.reviews-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reviews-sidebar {
+    position: sticky;
+    top: 100px; /* Отступ от липкого хедера */
+}
+
+
+
+/* Адаптация */
+@media (max-width: 900px) {
+    .reviews-layout {
+        grid-template-columns: 1fr;
+    }
+    .reviews-sidebar {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .reviews-page {
+        width: min(100% - 20px, 1200px);
+        margin-top: 20px;
+    }
+    
+}
