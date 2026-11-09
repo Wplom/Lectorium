@@ -2,15 +2,15 @@ import { useState } from 'react'
 import { lecturersData } from '../../data/lecturers'
 import LecturerCard from '../../components/LecturerCard/LecturerCard'
 import LecturerDetails from '../../components/LecturerDetails/LecturerDetails'
-import SearchFilter from '../../components/SearchFilter/SearchFilter' // <-- Импорт
-import PageHeader from '../../components/PageHeader/PageHeader' // <-- Импорт
+import SearchFilter from '../../components/SearchFilter/SearchFilter' 
+import PageHeader from '../../components/PageHeader/PageHeader'
 import './Lecturers.css'
 
 function Lecturers() {
     const [selectedLecturer, setSelectedLecturer] = useState(null)
-    const [searchQuery, setSearchQuery] = useState('') // <-- Состояние поиска
+    const [searchQuery, setSearchQuery] = useState('')
 
-    // Логика фильтрации
+    
     const filteredLecturers = lecturersData.filter(lecturer => {
         const query = searchQuery.toLowerCase()
         return (
@@ -42,7 +42,7 @@ function Lecturers() {
             />
 
 
-            {/* Добавили компонент поиска */}
+            {}
             <SearchFilter 
                 searchQuery={searchQuery} 
                 setSearchQuery={setSearchQuery} 

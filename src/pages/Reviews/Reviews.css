@@ -7,7 +7,7 @@
 
 
 
-/* Сетка: слева отзывы, справа форма */
+
 .reviews-layout {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
@@ -23,12 +23,12 @@
 
 .reviews-sidebar {
     position: sticky;
-    top: 100px; /* Отступ от липкого хедера */
+    top: 100px; 
 }
 
 
 
-/* Адаптация */
+
 @media (max-width: 900px) {
     .reviews-layout {
         grid-template-columns: 1fr;

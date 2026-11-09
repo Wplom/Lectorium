@@ -193,14 +193,14 @@
     flex: 1;
 }
 body {
-    background-color: #fcfbfe; /* Легкий фиолетовый оттенок вместо чисто белого */
+    background-color: #fcfbfe; 
     color: #2d2440;
     margin: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Темная тема */
+
 body.dark-theme {
-    background-color: #1a1423; /* Темный фон для всей страницы */
+    background-color: #1a1423; 
     color: #f5f1ff;
 }

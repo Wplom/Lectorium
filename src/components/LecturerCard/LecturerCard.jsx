@@ -9,7 +9,7 @@ function LecturerCard({ lecturer, onClick }) {
                     alt={lecturer.name} 
                     className="lecturer-photo"
                     onError={(e) => {
-                        e.target.src = 'https://via.placeholder.com/300x300?text=Фото' // Заглушка, если фото нет
+                        e.target.src = 'https://via.placeholder.com/300x300?text=Фото' 
                     }}
                 />
             </div>

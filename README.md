@@ -1,16 +1,58 @@
-# React + Vite
+# Учебная платформа «Лекториум»
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Веб-приложение для поиска профессиональных лекторов, просмотра их дисциплин и тарифов, а также платформа для управления отзывами и партнерами.
 
-Currently, two official plugins are available:
+## Стек и версии
+* **React** (^18.2.0) — библиотека для создания пользовательских интерфейсов.
+* **Vite** (^5.0.0) — сборщик и среда разработки.
+* **JavaScript (ES6+)** — язык программирования.
+* **Vanilla CSS** — стилизация компонентов (без использования сторонних библиотек и препроцессоров).
+* **Git** — система контроля версий.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Команды для установки и запуска
 
-## React Compiler
+Для локального запуска проекта выполните следующие шаги:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Клонируйте репозиторий:
+git clone https://github.com/ВАШ_НИК/edu-platform.git
+Перейдите в папку с проектом:
 
-## Expanding the ESLint configuration
+bash cd edu-platform Установите зависимости:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+bash npm install Запустите проект в режиме разработки:
+
+bash npm run dev Откройте браузер и перейдите по адресу, который появится в терминале (обычно http://localhost:5173).
+lab2-3/
+├── public/                 # Статические файлы (изображения лекторов, партнеров)
+├── src/
+│   ├── assets/             # Общие ресурсы (иконки, шрифты)
+│   ├── components/         # Переиспользуемые UI-компоненты
+│   │   ├── CtaBanner/      # Баннер с призывом к действию (фиолетовый)
+│   │   ├── Footer/         # Подвал сайта
+│   │   ├── Header/         # Шапка сайта с навигацией и переключателем темы
+│   │   ├── Hero/           # Главный баннер на странице Home
+│   │   ├── LecturerCard/   # Карточка лектора для сетки
+│   │   ├── LecturerDetails/# Подробная информация о лекторе
+│   │   ├── PageHeader/     # Шапка внутренних страниц
+│   │   ├── PartnerCard/    # Карточка партнера
+│   │   ├── ReviewCard/     # Карточка отзыва
+│   │   ├── ReviewForm/     # Форма добавления отзыва
+│   │   └── SearchFilter/   # Поисковая строка
+│   ├── data/               # Файлы с данными
+│   │   ├── lecturers.js    # Массив с информацией о 10 лекторах
+│   │   ├── partners.js     # Массив с данными партнеров
+│   │   └── reviews.js      # Начальные данные для отзывов
+│   ├── pages/              # Страницы приложения
+│   │   ├── About/          # Страница "О нас"
+│   │   ├── Home/           # Главная страница
+│   │   ├── Lecturers/      # Страница со списком лекторов
+│   │   ├── Login/          # Страница авторизации
+│   │   ├── Partners/       # Страница партнеров
+│   │   └── Reviews/        # Страница отзывов
+│   ├── App.css             # Глобальные стили и стили тем
+│   ├── App.jsx             # Корневой компонент (навигация, темы)
+│   ├── index.css           # Сброс стилей
+│   └── main.jsx            # Точка входа в приложение
+├── .gitignore
+├── package.json
+└── vite.config.js

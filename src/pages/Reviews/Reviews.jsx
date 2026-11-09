@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { initialReviews } from '../../data/reviews'
 import ReviewCard from '../../components/ReviewCard/ReviewCard'
 import ReviewForm from '../../components/ReviewForm/ReviewForm'
-import PageHeader from '../../components/PageHeader/PageHeader' // <-- Импорт
+import PageHeader from '../../components/PageHeader/PageHeader' 
 import './Reviews.css'
 
 function Reviews() {

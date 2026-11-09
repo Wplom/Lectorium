@@ -92,7 +92,7 @@
     background-color: #7c3aed;
 }
 
-/* Тёмная тема */
+
 
 .dark-theme .header {
     background-color: rgba(34, 27, 47, 0.94);
@@ -101,11 +101,11 @@
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.28);
 }
 
-.dark-theme .header-logo*{
+.dark-theme .header-logo{
     color: #c4b5fd;
 }
 
-.dark-the*e .navigation-link {
+.dark-theme .navigation-link {
     color: #ddd6eb;
 }
 
@@ -130,7 +130,7 @@
     background-color: #7c3aed;
 }
 
-/* Адаптация под небольшой экран */
+
 
 @media (max-width: 900px) {
     .header {

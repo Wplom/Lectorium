@@ -1,6 +1,6 @@
 import partners from '../../data/partners'
-import PartnerCard from '../../components/PartnerCard/PartnerCard' // <-- Добавили импорт
-import PageHeader from '../../components/PageHeader/PageHeader' // <-- Импорт
+import PartnerCard from '../../components/PartnerCard/PartnerCard' 
+import PageHeader from '../../components/PageHeader/PageHeader' 
 import CtaBanner from '../../components/CtaBanner/CtaBanner'
 import './Partners.css'
 
@@ -14,7 +14,6 @@ function Partners() {
             />
             <section className="partners-grid">
                 {partners.map((partner) => (
-                    /* Используем компонент, передавая в него данные */
                     <PartnerCard 
                         key={partner.id} 
                         partner={partner} 

@@ -17,7 +17,7 @@
 }
 
 
-/* Статистика */
+
 .about-stats {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -51,7 +51,7 @@
     font-weight: 600;
 }
 
-/* Ценности */
+
 .about-values {
     margin-top: 28px;
     padding: 45px;
@@ -116,7 +116,7 @@
 
 
 
-/* Темная тема */
+
 
 .dark-theme .about-values,
 .dark-theme .stat-item {

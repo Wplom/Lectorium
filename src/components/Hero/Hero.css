@@ -136,24 +136,22 @@
     border-color: #594175;
 }
 
-/* Удаляем .visual-icon */
 
-/* Добавляем стили для фото */
 .hero-image {
     display: block;
-    width: 375px;         /* Размер круга */
+    width: 375px;         
     height: 300px;
     margin: 0 auto 24px;
     
-    object-fit: cover;    /* Важно! Чтобы фото не растягивалось, а обрезалось под круг */
-    object-position: center; /* Центрируем фото */
+    object-fit: cover;    
+    object-position: center; 
     
-    border-radius: 15%;   /* Делаем круглым */
-    border: 4px solid white; /* Белая рамка вокруг фото */
-    box-shadow: 0 12px 30px rgba(109, 40, 217, 0.15); /* Тень */
+    border-radius: 15%;  
+    border: 4px solid white; 
+    box-shadow: 0 12px 30px rgba(109, 40, 217, 0.15); 
 }
 
-/* Для темной темы меняем цвет рамки */
+
 .dark-theme .hero-image {
     border-color: #241d31; 
 }

@@ -25,7 +25,7 @@ const platformValues = [
 function About({ setCurrentPage }) {
     return (
         <main className="about-page">
-            {/* Главный блок с текстом из макета */}
+            {}
             <PageHeader 
                 label="О платформе"
                 title="Мы упрощаем процесс подбора, бронирования и организации лекций, помогая находить экспертов, которые не просто делятся знаниями, но и вдохновляют аудиторию."
@@ -47,7 +47,7 @@ function About({ setCurrentPage }) {
                 </div>
             </section>
 
-            {/* Блок с ценностями */}
+            {}
             <section className="about-values">
                 <div className="section-heading">
                     <span>Наши принципы</span>
@@ -65,7 +65,7 @@ function About({ setCurrentPage }) {
                 </div>
             </section>
 
-            {/* Блок призыва к действию */}
+            {}
            <CtaBanner 
                 label="Начните сегодня"
                 title="Готовы найти своего наставника?"

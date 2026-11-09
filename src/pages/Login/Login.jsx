@@ -9,7 +9,7 @@ function Login({ setCurrentPage }) {
 
     function handleSubmit(e) {
         e.preventDefault()
-        // Заглушка для имитации входа
+       
         alert(isRegister ? 'Регистрация успешна!' : 'Вход выполнен!')
         setCurrentPage('home')
     }

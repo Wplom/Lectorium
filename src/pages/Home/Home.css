@@ -3,7 +3,7 @@
     margin: 32px auto 0;
 }
 
-/* Общие заголовки (убрали .hero-label из этой группы) */
+
 .section-heading span
  {
     display: inline-block;
@@ -49,7 +49,7 @@
     line-height: 1.7;
 }
 
-/* Преимущества */
+
 
 .about-grid {
     display: grid;
@@ -88,7 +88,7 @@
     line-height: 1.6;
 }
 
-/* Направления */
+
 
 .directions-grid {
     display: grid;
@@ -165,10 +165,7 @@
     background-color: #7c3aed;
 }
 
-/* Нижний баннер */
 
-
-/* Темная тема */
 
 .dark-theme .home-about,
 .dark-theme .directions {
@@ -206,7 +203,7 @@
     background-color: #423157;
 }
 
-/* Адаптация */
+
 
 @media (max-width: 900px) {
     .about-grid,

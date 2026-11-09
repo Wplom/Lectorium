@@ -1,4 +1,4 @@
-import Hero from '../../components/Hero/Hero' // <-- Добавили импорт
+import Hero from '../../components/Hero/Hero' 
 import CtaBanner from '../../components/CtaBanner/CtaBanner'
 import './Home.css'
 
@@ -26,7 +26,7 @@ const directions = [
 function Home({ setCurrentPage }) {
     return (
         <main className="home">
-            {/* Заменили огромный блок section на компонент */}
+            {}
             <Hero setCurrentPage={setCurrentPage} />
 
             <section className="home-about">

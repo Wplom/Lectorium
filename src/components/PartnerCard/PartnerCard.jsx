@@ -8,7 +8,7 @@ function PartnerCard({ partner }) {
                     alt={`Логотип ${partner.name}`} 
                     className="partner-logo-img"
                     onError={(e) => {
-                        // Если картинки нет, показываем текст
+                        
                         e.target.style.display = 'none';
                         e.target.parentElement.innerText = partner.name;
                     }}
